@@ -70,11 +70,11 @@ exports.checkOutput = function (f, argv, cb) {
     reset();
 
     return {
-      errors: errors,
-      logs: logs,
-      warnings: warnings,
-      exit: exit,
-      result: result
+      errors,
+      logs,
+      warnings,
+      exit,
+      result
     };
   }
 };

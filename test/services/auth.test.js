@@ -135,7 +135,7 @@ describe('Auth tests', function () {
             token: {
               consumerId: userFromDb.id,
               authType: 'oauth2',
-              tokenDecrypted: tokenDecrypted,
+              tokenDecrypted,
               id: tokenId,
               scopes: ['someScope1', 'someScope2', 'someScope3']
             },

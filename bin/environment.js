@@ -55,7 +55,7 @@ exports.bootstrap = (eg, adapter) => {
     files.forEach(file => {
       if (file === 'index.js') {
         const namespace = `${prefix}:${dir}`;
-        commands.push({ namespace: namespace, path: directoryPath });
+        commands.push({ namespace, path: directoryPath });
         env.register(directoryPath, namespace);
         return;
       }
@@ -68,7 +68,7 @@ exports.bootstrap = (eg, adapter) => {
       }
 
       subCommands[dir].push({
-        namespace: namespace,
+        namespace,
         path: filePath
       });
 

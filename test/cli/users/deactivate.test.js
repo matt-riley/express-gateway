@@ -18,7 +18,7 @@ describe('eg users deactivate', () => {
     username2 = idGen.v4();
 
     return adminHelper.admin.users.create({
-      username: username,
+      username,
       firstname: 'La',
       lastname: 'Deeda'
     }).then((createdUser) => {

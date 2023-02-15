@@ -18,7 +18,7 @@ describe('eg users info', () => {
     username = idGen.v4();
 
     return adminHelper.admin.users.create({
-      username: username,
+      username,
       firstname: 'La',
       lastname: 'Deeda'
     })

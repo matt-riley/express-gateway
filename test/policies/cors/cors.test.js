@@ -23,7 +23,7 @@ describe('cors', () => {
             {
               cors: {
                 action: {
-                  origin: origin,
+                  origin,
                   methods: 'HEAD,PUT,PATCH,POST,DELETE',
                   allowedHeaders: 'X-TEST'
                 }

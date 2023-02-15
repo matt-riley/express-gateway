@@ -126,7 +126,7 @@ module.exports = class extends eg.Generator {
             const options = {
               skipPrompt: true,
               isLast: index === lines.length - 1,
-              user: user
+              user
             };
 
             return this._promptAndValidate(app, SCHEMA, options)
